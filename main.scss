@@ -1,15 +1,55 @@
 /* SCSS document */
+// font for the header KEEPY
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Subrayada:400,700');
+
 
 // colors
 $grey: #E8E8E8;
 $white: #FAFAFA;
 $greyline: #DDDD;
 $blackish: #272727;
+$yellow: #FFBB00;
+
+//note colors
+$bluish: #80D8FF;
+$redish: #FF8A80;
+$orangish: #FFD180;
+$yellowish: #FFFF8D;
+$greyish: #CFD8DC;
+$greenish: #CCFF90;
+
 $radius: 10px;
+
+*{
+    margin:0;
+    padding: 0;
+}
 
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
      -moz-border-radius: $radius;
       -ms-border-radius: $radius;
           border-radius: $radius;
+}
+body{
+    background-color: $grey;
+}
+
+#header{
+    background-color: $yellow;
+    width: 100%;
+    //position: fixed;
+    margin: 0;
+    padding: 35px;
+    color: black;
+    height: 90px;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    #big{
+        font-weight: 700;
+        font-size: 3em;
+    }
+}
+
+.bodystyle{
+    margin-top: 90px;
 }
