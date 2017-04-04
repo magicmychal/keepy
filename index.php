@@ -35,7 +35,7 @@
         </div>
         <div class="ui container bodystyle">
             <div class="ui six column centered grid">
-            <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
+                <form method="post" action="<?php echo htmlspecialchars($_SERVER[" PHP_SELF "]);?>">
                     <div class="ui fluid input">
                         <input type="text" name="title" placeholder="Title" value="<?php echo $title;?>">
                     </div>
@@ -50,12 +50,19 @@
                     <input class="ui big yellow button" type="submit" name="submit" value="Post it!">
                 </form>
             </div>
-           
-               <?php echo $nameErr;?><br>
-               <?php echo $emailErr;?><br>
-               <?php echo $titleErr;?><br>
-               <?php echo $contentErr;?>
-        
+            <?php echo $nameErr;?><br>
+            <?php echo $emailErr;?><br>
+            <?php echo $titleErr;?><br>
+            <?php echo $contentErr;?>
+            <script>
+                $('.message .close')
+                    .on('click', function() {
+                        $(this)
+                            .closest('.message')
+                            .transition('fade');
+                    });
+            </script>
+
         </div>
 
 </body>
