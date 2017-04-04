@@ -34,8 +34,16 @@
         </span>
         </div>
         <div class="ui container bodystyle">
+            <div class="ui floating message">
+                    <i class='close icon' data-vivaldi-spatnav-clickable='1'></i>
+                    <div class="header">
+                    Here for the first time?
+                    </div>
+                    <p>Keepy is a public space to share your notes! Why? Maybe is you're a Russian agent and you want to send a secret not so secret code you'll find this useful. <br><b>Enjoy!</b> By the way, we use coockies. Hope you're ok with that. </p>
+                </div><br>
+
             <div class="ui six column centered grid">
-                <form method="post" action="<?php echo htmlspecialchars($_SERVER[" PHP_SELF "]);?>">
+                <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
                     <div class="ui fluid input">
                         <input type="text" name="title" placeholder="Title" value="<?php echo $title;?>">
                     </div>
