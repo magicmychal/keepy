@@ -13,19 +13,22 @@
       integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
       crossorigin="anonymous"></script>
     <script src="kit/semantic.js"></script>
+
 </head>
 <body>
+
+
 <div id="header">
-    <span id="big">Keepy</span>
-    by Zuza &amp; Michał
-    <span id="to_the_right">
-        <i class="big write square icon active"></i>
-        <i class="big sticky note icon"></i>
-    </span>
-</div>
+        <span id="big">Keepy</span>
+        by Zuza &amp; Michał
+        <span id="to_the_right">
+            <i class="big write square icon active"></i>
+            <i class="big sticky note icon"></i>
+        </span>
+    </div>
 <div class="ui container bodystyle">    
     <div class="ui six column centered grid">
-        <form>
+        <form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>">
           <div class="ui input">
            <input type="text" name="title" placeholder="Title">
           </div>
@@ -35,15 +38,20 @@
             <textarea></textarea>
           </div></div>
             <div class="ui input">
-              <input type="text" placeholder="Name">
+              <input type="text" placeholder="Name" name="name">
             </div>
             <div class="ui input">
-              <input type="text" placeholder="Male">
+              <input type="text" placeholder="mail" name="email">
             </div>
             <button class="ui big yellow button" data-vivaldi-spatnav-clickable="1" type="submit" value="Publish" >
               Post it!
             </button>
         </form>
+    </div>
+    <div class="ui six column centered grid">
+        <?php
+            echo 'hey';
+        ?>
     </div>
 </div>
 
