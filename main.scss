@@ -75,3 +75,14 @@ body{
 .input{
     margin: 10px;
 }
+
+.title{
+    width: 100%;
+}
+
+.txt_style{
+    background-color: #fff;
+    @include border-radius($radius);
+    padding: 10px;
+    border-color: #DEDEDE;
+}

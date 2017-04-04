@@ -41,3 +41,15 @@ body {
 
 .input {
   margin: 10px; }
+
+.title {
+  width: 100%; }
+
+.txt_style {
+  background-color: #fff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  padding: 10px;
+  border-color: #DEDEDE; }
