@@ -24,6 +24,14 @@ body {
     float: right;
     font-family: 'Secular One', sans-serif; }
 
+.container {
+  background-color: #FAFAFA;
+  padding: 50px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px; }
+
 .bodystyle {
   margin-top: 90px; }
 

@@ -23,7 +23,7 @@ $yellowish: #FFFF8D;
 $greyish: #CFD8DC;
 $greenish: #CCFF90;
 
-$radius: 10px;
+$radius: 5px;
 
 *{
     margin:0;
@@ -57,6 +57,11 @@ body{
         float: right;
         font-family: 'Secular One', sans-serif;
     }
+}
+.container{
+    background-color: $white;
+    padding: 50px;
+    @include border-radius($radius);
 }
 
 .bodystyle{
