@@ -15,12 +15,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   }
 
     if (empty($_POST["title"])) {
-    $nameErr = "Title is required";
+    $titleErr = "Title is required";
   } else {
-    $name = test_input($_POST["name"]);
+    $title = test_input($_POST["title"]);
     // check if name only contains letters and whitespace
-    if (!preg_match("/^[a-zA-Z ]*$/",$name)) {
-      $nameErr = "Only letters and white space allowed"; 
+    if (!preg_match("/^[a-zA-Z ]*$/",$title)) {
+      $titleErr = "Only letters and white space allowed"; 
     }
   }
 

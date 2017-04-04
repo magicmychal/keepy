@@ -35,10 +35,9 @@
         </div>
         <div class="ui container bodystyle">
             <div class="ui six column centered grid">
-                <form method="post" action="<?php echo htmlspecialchars($_SERVER[" PHP_SELF "]);?>">
+            <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
                     <div class="ui fluid input">
                         <input type="text" name="title" placeholder="Title" value="<?php echo $title;?>">
-                        <span class="error"></span>
                     </div>
                     <textarea class="txt_style" name="content" placeholder="Type here" rows="5" cols="40"><?php echo $content;?></textarea>
                     <br><br>
