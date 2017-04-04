@@ -1,5 +1,7 @@
 /* SCSS document */
 @import url("https://fonts.googleapis.com/css?family=Montserrat+Subrayada:400,700");
+@import url("https://fonts.googleapis.com/css?family=Secular+One");
+@import url("https://fonts.googleapis.com/css?family=Bubbler+One");
 * {
   margin: 0;
   padding: 0; }
@@ -18,6 +20,13 @@ body {
   #header #big {
     font-weight: 700;
     font-size: 3em; }
+  #header #to_the_right {
+    float: right;
+    font-family: 'Secular One', sans-serif; }
 
 .bodystyle {
   margin-top: 90px; }
+
+.active {
+  color: #E8E8E8;
+  opacity: 0.2; }

@@ -1,7 +1,12 @@
 /* SCSS document */
 // font for the header KEEPY
 @import url('https://fonts.googleapis.com/css?family=Montserrat+Subrayada:400,700');
+//fat font for other purpose type font-family: 'Secular One', sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Secular+One');
+//font for handwriting 
+@import url('https://fonts.googleapis.com/css?family=Bubbler+One');
 
+$hand_writing: 'Bubbler One', sans-serif;
 
 // colors
 $grey: #E8E8E8;
@@ -48,8 +53,17 @@ body{
         font-weight: 700;
         font-size: 3em;
     }
+    #to_the_right{
+        float: right;
+        font-family: 'Secular One', sans-serif;
+    }
 }
 
 .bodystyle{
     margin-top: 90px;
+}
+
+.active{
+    color: $grey;
+    opacity: 0.2;
 }
