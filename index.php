@@ -46,22 +46,17 @@
                     </div>
                     <br><br>
                     <div class="ui input">
-                        <input type="text" name="name" value="<?php echo $name;?>">
+                        <input type="text" placeholder="Name" name="name" value="<?php echo $name;?>">
                     </div>
                     <input class="ui big yellow button" type="submit" name="submit" value="Post it!">
                 </form>
             </div>
-            <div class="ui negative message">
-              <i class="close icon" data-vivaldi-spatnav-clickable="1"></i>
-              <div class="header">
-               Check errors
-              </div>
-              <p>
+           
                <?php echo $nameErr;?><br>
                <?php echo $emailErr;?><br>
                <?php echo $titleErr;?><br>
                <?php echo $contentErr;?>
-            </p></div>
+        
         </div>
 
 </body>
