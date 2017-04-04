@@ -4,5 +4,12 @@
 $grey: #E8E8E8;
 $white: #FAFAFA;
 $greyline: #DDDD;
-$blackish: #272727
+$blackish: #272727;
+$radius: 10px;
 
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
