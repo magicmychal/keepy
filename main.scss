@@ -38,6 +38,10 @@ $radius: 5px;
 }
 body{
     background-color: $grey;
+    a{
+        color: black;
+        text-decoration: none;
+    }
 }
 
 .display_none{
