@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Keepy by Zuzanna and Michal </title>
-    <link rel="stylesheet" type="text/css" href="kit/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="kit/semantic.min.css"> 
     <link rel="stylesheet" type="text/css" href="main.css" />
 
     <!-- jQuery load -->
@@ -34,14 +34,23 @@
         </span>
         </div>
         <div class="ui container bodystyle">
-            <div class="ui floating message">
-                    <i class='close icon' data-vivaldi-spatnav-clickable='1'></i>
+            <div class="ui floating message display_none">
                     <div class="header">
-                    Here for the first time?
+                    Here for the first time? YOU WILL SEE THIS ONLY ONCE
                     </div>
-                    <p>Keepy is a public space to share your notes! Why? Maybe is you're a Russian agent and you want to send a secret not so secret code you'll find this useful. <br><b>Enjoy!</b> By the way, we use coockies. Hope you're ok with that. </p>
+                    <p>Keepy is a public space to share your notes! Why? Maybe is you're a Russian agent and you want to send a secret not so secret code you'll find this useful. <br>
+                    Every field is required. Fill them all and smash the button below! <b>Enjoy!</b></p>
                 </div><br>
-
+            <script>
+                   if (localStorage.getItem('visited') == 'yes') {
+                        console.log('Page has been visited before');
+                        var elementTohide = document.querySelector(".display_none");
+                        elementTohide.style.display = "none";
+                   } else {
+                        console.log('Local Storage is empty when looking for if visited statement');
+                        localStorage.setItem("visited", "yes");
+                    }
+            </script>
             <div class="ui six column centered grid">
                 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
                     <div class="ui fluid input">
