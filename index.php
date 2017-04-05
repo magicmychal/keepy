@@ -55,7 +55,9 @@
                     <div class="ui input">
                         <input type="text" placeholder="Name" name="name" value="<?php echo $name;?>">
                     </div><br><br>
-                    <input class="ui big yellow button" type="submit" name="submit" value="Post it!">
+                   <a href="notes.php" > <input class="ui big yellow button"  type="submit" name="submit" value="Post it!" > </a>
+                   
+                  
                 </form>
             </div>
             <?php echo $nameErr;?><br>

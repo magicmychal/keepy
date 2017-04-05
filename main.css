@@ -1,7 +1,6 @@
 /* SCSS document */
 @import url("https://fonts.googleapis.com/css?family=Montserrat+Subrayada:400,700");
 @import url("https://fonts.googleapis.com/css?family=Secular+One");
-@import url("https://fonts.googleapis.com/css?family=Bubbler+One");
 * {
   margin: 0;
   padding: 0; }
@@ -57,3 +56,43 @@ body {
 
 form {
   margin-bottom: 10px; }
+
+.box1 {
+  background: white;
+  margin-top: 20px;
+  margin-bottom: 20;
+  font-size: 15px;
+  height: 200px;
+  width: 300px;
+  padding: 20px; }
+
+.box2 {
+  background: white;
+  margin-top: 20px;
+  margin-bottom: 20;
+  font-size: 15px;
+  height: 200px;
+  width: 300px;
+  padding: 20px; }
+
+.box3 {
+  background: white;
+  margin-top: 20px;
+  margin-bottom: 20;
+  font-size: 15px;
+  height: 200px;
+  width: 300px;
+  padding: 20px;
+  margin-right: 20px;
+  margin-left: 20px; }
+
+.down {
+  text-align: left;
+  font-size: 10px; }
+
+.content {
+  text-align: justify;
+  text-justify: inter-word; }
+
+h2 {
+  font-family: 'Montserrat Subrayada', sans-serif; }

@@ -3,8 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat+Subrayada:400,700');
 //fat font for other purpose type font-family: 'Secular One', sans-serif;
 @import url('https://fonts.googleapis.com/css?family=Secular+One');
-//font for handwriting 
-@import url('https://fonts.googleapis.com/css?family=Bubbler+One');
+
 
 $hand_writing: 'Bubbler One', sans-serif;
 
@@ -22,7 +21,9 @@ $orangish: #FFD180;
 $yellowish: #FFFF8D;
 $greyish: #CFD8DC;
 $greenish: #CCFF90;
-
+$h: 200px;
+$w: 300px;
+$p: 20px;
 $radius: 5px;
 
 *{
@@ -90,3 +91,55 @@ body{
 form {
     margin-bottom: 10px;
 }
+
+.box1 {
+	
+	background: white ;
+	margin-top:20px;
+	margin-bottom:20;
+	font-size:15px ;
+	height:$h;
+	width: $w;
+	padding:$p;
+
+
+	}
+	
+.box2 {
+	
+	background: white ;
+	margin-top:20px;
+	margin-bottom:20;
+	font-size:15px ;
+	height:$h;
+	width: $w;
+	padding:$p;
+
+
+	}
+	
+	.box3 {
+	
+	background: white ;
+	margin-top:20px;
+	margin-bottom:20;
+	font-size:15px ;
+	height:$h;
+	width: $w;
+	padding:$p;
+	margin-right: 20px;
+	margin-left:20px;
+	}
+	
+	.down {
+		text-align:left;
+		font-size:10px}
+		
+ .content {
+	  text-align: justify;
+    text-justify: inter-word;
+ }
+ 
+ h2 {
+	 font-family: 'Montserrat Subrayada', sans-serif;
+	 }		
