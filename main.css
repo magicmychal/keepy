@@ -39,7 +39,7 @@ body {
   margin-top: 90px; }
 
 .active {
-  color: #E8E8E8;
+  color: #765700;
   opacity: 0.2; }
 
 .input {
@@ -60,3 +60,41 @@ body {
 
 form {
   margin-bottom: 10px; }
+
+.box1 {
+  background: white;
+  margin-top: 20px;
+  margin-bottom: 20;
+  font-size: 15px;
+  width: 300px;
+  padding: 20px; }
+
+.box2 {
+  background: white;
+  margin-top: 20px;
+  margin-bottom: 20;
+  font-size: 15px;
+  width: 300px;
+  padding: 20px; }
+
+.box3 {
+  background: white;
+  margin-top: 20px;
+  margin-bottom: 20;
+  font-size: 15px;
+  width: 300px;
+  padding: 20px;
+  margin-right: 20px;
+  margin-left: 20px; }
+
+.down {
+  text-align: left;
+  font-size: 10px; }
+
+.content {
+  text-align: justify;
+  text-justify: inter-word;
+  padding-bottom: 10px; }
+
+h2 {
+  font-family: 'Montserrat Subrayada', sans-serif; }
