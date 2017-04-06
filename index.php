@@ -30,7 +30,7 @@
             <a href="index.php"><span id="big">Keepy</span></a> by Zuza &amp; Michał
             <span id="to_the_right">
             <i class="big write square icon active"></i>
-            <i class="big sticky note icon"></i>
+            <a href="posted.php"><i class="big sticky note icon"></i></a>
         </span>
         </div>
         <div class="ui container bodystyle">
