@@ -28,7 +28,7 @@
             <div class="ui six column centered grid">
             
             
-        <div class="box">
+        <div class="box1">
              <h2>Title </h2> 
             <p class="content"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus. </p> 
             <p class="down">Name</p>
@@ -36,7 +36,7 @@
         </div> 
         
          
-         <div class="box">
+         <div class="box3">
               <h2>Title </h2>  
             <p class="content"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus.</p> 
             <p class="down">Name</p>
@@ -45,7 +45,7 @@
         </div>
       
          
-        <div class="box">
+        <div class="box2">
               <h2>Title </h2> 
             <p class="content"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus. </p> 
             <p class="down">Name</p>
@@ -69,14 +69,14 @@
         </div>
       
          
-        <div class="box">
+        <div class="box2">
             <h2>Title </h2> 
             <p class="content"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus.</p> 
             <p class="down">Name</p>
             <p class="down">Date</p>
         </div>  
         
-          <div class="box">
+          <div class="box1">
              <h2>Title </h2> 
             <p class="content"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus. </p> 
             <p class="down">Name</p>
@@ -92,7 +92,7 @@
         </div>
       
          
-        <div class="box">
+        <div class="box2">
             <h2>Title </h2> 
             <p class="content"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus.</p> 
             <p class="down">Name</p>
