@@ -40,12 +40,23 @@
                     </div>
                     <p>Keepy is a public space to share your notes! Why? Maybe is you're a Russian agent and you want to send a secret not so secret code you'll find this useful. <br>
                     Every field is required. Fill them all and smash the button below! <b>Enjoy!</b></p>
+                </div>
+            <div class="ui floating message display_block">
+                    <i class='close icon' data-vivaldi-spatnav-clickable='1'></i>
+                    <div class="header">
+                    Welcome back ;)
+                    </div>
+                    <p>Ready to share another story?<br>
+                        You arleady know the rules <br>
+                        <b>Enjoy!</b></p>
                 </div><br>
             <script>
                    if (localStorage.getItem('visited') == 'yes') {
                         console.log('Page has been visited before');
                         var elementTohide = document.querySelector(".display_none");
                         elementTohide.style.display = "none";
+                       var elementToshow = document.querySelector(".display_block");
+                       elementToshow.style.display = "block";
                    } else {
                         console.log('Local Storage is empty when looking for if visited statement');
                         localStorage.setItem("visited", "yes");
@@ -58,13 +69,13 @@
                     </div>
                     <textarea class="txt_style" name="content" id="content"  placeholder="Type here" rows="5" cols="40"><?php echo $content;?></textarea>
                     <br><br>
-                    <div class="ui input">
-                        <input type="text" placeholder="E-mail" name="mail" id="mail" value="<?php echo $email;?>">
+                    <div class="ui input popup_info">
+                        <input type="text" placeholder="E-mail" name="mail" id="mail" value="<?php echo $email;?>" data-tooltip="Add users to your feed" data-position="top right">
                     </div>
                     <div class="ui input">
                         <input type="text" placeholder="Name" name="name" id="name" value="<?php echo $name;?>">
                     </div><br><br>
-                    <input class="ui big yellow button" type="submit" name="submit" value="Post it!">
+                    <a href="posted.php"><input class="ui big yellow button" type="submit" name="submit" value="Post it!"></a>
                 </form>
             </div>
             <?php echo $nameErr;?><br>
@@ -78,6 +89,11 @@
                             .closest('.message')
                             .transition('fade');
                     });
+               $('.popup_info input')
+                  .popup({
+                    on: 'focus'
+                  })
+                ;
             </script>
             <?php 
             require_once('php/insert.php');
