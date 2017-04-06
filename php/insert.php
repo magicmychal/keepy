@@ -22,9 +22,7 @@
     
             
             $random_color = rand(0,4);
-            print $random_color."<br>";
             $selectedcolor = $colors[$random_color];
-            print $selectedcolor;
 
             require_once('db_con.php');
 
