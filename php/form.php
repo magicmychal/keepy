@@ -14,7 +14,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = test_input($_POST["name"]);
     // check if name only contains letters and whitespace
     if (!preg_match("/^[a-zA-Z ]*$/",$name)) {
-      $nameErr = "Only letters and white space allowed"; 
+      $nameErr = "<div class='ui negative message'>
+                <i class='close icon' data-vivaldi-spatnav-clickable='1'></i>
+                <div class='error'>Hey! Stop!</div>
+                <p>Only letters and white space allowed</p>
+                </div>"; 
     }
   }
 
