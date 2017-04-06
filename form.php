@@ -33,7 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   }
 
   
-  if (empty($_POST["email"])) {
+ /* if (empty($_POST["email"])) {
     $emailErr = "<div class='ui negative message'>
                 <i class='close icon' data-vivaldi-spatnav-clickable='1'></i>
                 <div class='error'>Hey! Stop!</div>
@@ -42,7 +42,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   } else {
     $email = test_input($_POST["email"]);
     // check if e-mail address is well-formed
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+   if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
       $emailErr = "<div class='ui negative message'>
                 <i class='close icon' data-vivaldi-spatnav-clickable='1'></i>
                 <div class='error'>Hey! Stop!</div>
@@ -50,7 +50,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </div>"; 
     }
   }
-    
+     */
   if (empty($_POST["content"])) {
     $comment = "";
   } else {

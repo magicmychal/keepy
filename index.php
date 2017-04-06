@@ -54,15 +54,15 @@
             <div class="ui six column centered grid">
                 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
                     <div class="ui fluid input">
-                        <input type="text" name="title" placeholder="Title" value="<?php echo $title;?>">
+                        <input type="text" name="title" id="title" placeholder="Title" value="<?php echo $title;?>">
                     </div>
-                    <textarea class="txt_style" name="content" placeholder="Type here" rows="5" cols="40"><?php echo $content;?></textarea>
+                    <textarea class="txt_style" name="content" id="content"  placeholder="Type here" rows="5" cols="40"><?php echo $content;?></textarea>
                     <br><br>
                     <div class="ui input">
-                        <input type="text" placeholder="E-mail" name="email" value="<?php echo $email;?>">
+                        <input type="text" placeholder="E-mail" name="mail" id="mail" value="<?php echo $email;?>">
                     </div>
                     <div class="ui input">
-                        <input type="text" placeholder="Name" name="name" value="<?php echo $name;?>">
+                        <input type="text" placeholder="Name" name="name" id="name" value="<?php echo $name;?>">
                     </div><br><br>
                     <input class="ui big yellow button" type="submit" name="submit" value="Post it!">
                 </form>
@@ -79,7 +79,37 @@
                             .transition('fade');
                     });
             </script>
+            <?php 
+            /*$titleForm = $_POST['title'];
+            $contentForm = $_POST['content'];
+            $mailForm = $_POST['mail'];
+            $nameForm = $_POST['name'];
+            $currentDate ='22/12/1996';
+            $color = 'onemoretime '; */
+            
+            $titleForm = filter_input(INPUT_POST, 'title', FILTER_SANITIZE_STRING);
+            $contentForm = filter_input(INPUT_POST, 'content', FILTER_SANITIZE_STRING);
+            $mailForm = filter_input(INPUT_POST, 'mail', FILTER_SANITIZE_STRING);
+            $nameForm = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING);
+            $currentDate ='22/12/1996';
+            $color = 'onemoretime '; 
+            
 
+            require_once('db_con.php');
+
+
+
+            $sql = "INSERT INTO notes(title, content, name, mail, color) VALUES (?,?,?,?,?)";
+            $stmt = $con->prepare($sql);
+            $stmt->bind_param('sssss',$titleForm, $contentForm, $nameForm, $mailForm, $color);
+
+            $stmt->execute();
+            $stmt->close();
+
+            mysqli_close($con);
+            
+            
+            ?>
         </div>
 
 </body>
