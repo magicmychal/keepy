@@ -12,18 +12,19 @@
             $nameForm = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING);
             
             // code for random colors
-            $colors = array();
+             $colors = array();
     
            array_push($colors, "#80D8FF"); //blueish
            array_push($colors, "#FFD180"); //redish
-           array_push($colors, "#FFD180"); //orangeish
            array_push($colors, "#FFFF8D"); //yellowish
            array_push($colors, "#CFD8DC"); //greyish
            array_push($colors, "#CCFF90"); //greenish
-
-            $color_sort = sort($colors);
-            $random_color = count(rand(0,$color_sort)-1);
+    
+            
+            $random_color = rand(0,4);
+            print $random_color."<br>";
             $selectedcolor = $colors[$random_color];
+            print $selectedcolor;
 
             require_once('db_con.php');
 
