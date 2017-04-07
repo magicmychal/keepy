@@ -1,7 +1,12 @@
 <?php
     require_once('db_con.php');
 
-   $sql = "SELECT title, content, name, date, color FROM notes WHERE 1 order by ID asc limit 9";
+   //$records_number = mysqli_query($con)"SELECT COUNT(*) FROM notes";
+    
+
+    //COŚ TU KURCZĘ NIE DZIAŁA :/ 
+    //$sql = "SELECT TOP 10 title, content, name, date, color FROM notes order by ID DESC";
+    $sql = "SELECT title, content, name, date, color FROM notes order by ID asc limit 3,12";
     
     $result = mysqli_query($con, $sql);
     
