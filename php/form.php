@@ -60,12 +60,21 @@ if (empty($_POST["mail"])) {
   }
       
   if (empty($_POST["content"])) {
-    $comment = "";
-  } else {
+    $contentErr = "<div class='ui negative message'>
+                <i class='close icon' data-vivaldi-spatnav-clickable='1'></i>
+                <div class='error'>Hey! Stop!</div>
+                <p>You're note is empty</p>
+                </div>";
+  } elseif(strlen($_POST["content"])>201){
+        $contentErr = "<div class='ui negative message'>
+                <i class='close icon' data-vivaldi-spatnav-clickable='1'></i>
+                <div class='error'>Hey! Stop!</div>
+                <p>You're note is too long. The maximum is 200 characters</p>
+                </div>";
+    } else {
     $comment = test_input($_POST["content"]);
   }
-
-
+    
 }
 
     
