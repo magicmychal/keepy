@@ -29,11 +29,19 @@
         <div id="header">
             <a href="index.php"><span id="big">Keepy</span></a> by Zuza &amp; Michał
             <span id="to_the_right">
-            <i class="big write square icon active"></i>
+            <i class="big write square icon activeicon"></i>
             <a href="posted.php"><i class="big sticky note icon"></i></a>
         </span>
         </div>
+        
         <div class="ui container bodystyle form">
+            <script>
+                $(document).ready(function () {
+
+                    $('.ui.accordion').accordion('refresh');
+                });
+
+            </script>
             <div class="ui floating message display_none">
                     <div class="header">
                     Here for the first time? YOU WILL SEE THIS ONLY ONCE
@@ -62,22 +70,32 @@
                         localStorage.setItem("visited", "yes");
                     }
             </script>
-            <div class="ui six column centered grid">
-                <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
-                    <div class="ui fluid input">
-                        <input type="text" name="title" id="title" placeholder="Title" value="<?php echo $title;?>">
+            <div class="ui accordion">
+                    <div class="title">
+                        <i class="dropdown icon"></i>
+                        Add a note
                     </div>
-                    <textarea class="txt_style" name="content" id="content"  placeholder="Type here" rows="5" cols="40"><?php echo $content;?></textarea>
-                    <br><br>
-                    <div class="ui input popup_info">
-                        <input type="text" placeholder="E-mail" name="mail" id="mail" value="<?php echo $email;?>" data-tooltip="Add users to your feed" data-position="top right">
+
+                    <div class="content">
+                        <div class="ui six column centered grid">
+                            <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+                            <div class="ui fluid input">
+                                <input type="text" name="title" id="title" placeholder="Title" value="<?php echo $title;?>">
+                            </div>
+                            <textarea class="txt_style" name="content" id="content"  placeholder="Type here" rows="5" cols="40"><?php echo $content;?></textarea>
+                            <br><br>
+                            <div class="ui input popup_info">
+                                <input type="text" placeholder="E-mail" name="mail" id="mail" value="<?php echo $email;?>" data-tooltip="Add users to your feed" data-position="top right">
+                            </div>
+                            <div class="ui input">
+                                <input type="text" placeholder="Name" name="name" id="name" value="<?php echo $name;?>">
+                            </div><br><br>
+                            <a href="posted.php"><input class="ui big yellow button" type="submit" name="submit" value="Post it!"></a>
+                        </form>
                     </div>
-                    <div class="ui input">
-                        <input type="text" placeholder="Name" name="name" id="name" value="<?php echo $name;?>">
-                    </div><br><br>
-                    <a href="posted.php"><input class="ui big yellow button" type="submit" name="submit" value="Post it!"></a>
-                </form>
-            </div>
+                    </div>
+              </div>
+           
             
             <?php echo $nameErr;?><br>
             <?php echo $emailErr;?><br>
