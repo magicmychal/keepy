@@ -33,7 +33,7 @@
             <a href="posted.php"><i class="big sticky note icon"></i></a>
         </span>
         </div>
-        <div class="ui container bodystyle">
+        <div class="ui container bodystyle form">
             <div class="ui floating message display_none">
                     <div class="header">
                     Here for the first time? YOU WILL SEE THIS ONLY ONCE
@@ -78,6 +78,7 @@
                     <a href="posted.php"><input class="ui big yellow button" type="submit" name="submit" value="Post it!"></a>
                 </form>
             </div>
+            
             <?php echo $nameErr;?><br>
             <?php echo $emailErr;?><br>
             <?php echo $titleErr;?><br>
@@ -99,7 +100,11 @@
             require_once('php/insert.php');
             ?>
         </div>
-
+        <div class="ui container output">
+            <?php 
+            require_once('php/select.php');
+            ?>
+        </div>
 </body>
 
 </html>

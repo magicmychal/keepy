@@ -41,6 +41,10 @@ body {
 .bodystyle {
   margin-top: 90px; }
 
+.output {
+  margin-top: 20px;
+  margin-bottom: 50px; }
+
 .active {
   color: #765700;
   opacity: 0.2; }
@@ -92,7 +96,7 @@ form {
 
 .down {
   text-align: left;
-  font-size: 10px; }
+  font-size: 1em; }
 
 .content {
   text-align: justify;

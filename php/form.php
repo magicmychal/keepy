@@ -28,17 +28,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <div class='error'>Hey! Stop!</div>
                 <p><b>Title</b> is required</p>
                 </div>";
-  } else {
-    $title = test_input($_POST["title"]);
-    // check if name only contains letters and whitespace
-    if (!preg_match("/^[a-zA-Z ]*$/",$title)) {
-      $titleErr = "<div class='ui negative message'>
+  } elseif(strlen($_POST["title"])>51){
+        $titleErr = "<div class='ui negative message'>
                 <i class='close icon' data-vivaldi-spatnav-clickable='1'></i>
                 <div class='error'>Hey! Stop!</div>
-                <p>Only letters and white space allowed</p>
-                </div>"; 
+                <p>Your title is too long. The maximum is 50 characters</p>
+                </div>";
     }
-  }
 
   
 if (empty($_POST["mail"])) {
@@ -69,16 +65,13 @@ if (empty($_POST["mail"])) {
         $contentErr = "<div class='ui negative message'>
                 <i class='close icon' data-vivaldi-spatnav-clickable='1'></i>
                 <div class='error'>Hey! Stop!</div>
-                <p>You're note is too long. The maximum is 200 characters</p>
+                <p>Your note is too long. The maximum is 200 characters</p>
                 </div>";
     } else {
     $comment = test_input($_POST["content"]);
   }
-    
+   
 }
-
-    
-
 
 
 ?>

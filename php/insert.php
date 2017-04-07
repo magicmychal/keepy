@@ -35,7 +35,7 @@
             $stmt->execute();
             $stmt->close();
 
-            mysqli_close($con);
+            //mysqli_close($con);
             
             
             ?>
