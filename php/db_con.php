@@ -13,7 +13,7 @@ const MYSQLDB   = 'db1223200_mil'; // DATABASE NAME
 // create database connection object
 //$con = new mysqli(HOSTNAME, MYSQLUSER, MYSQLPASS, MYSQLDB);
 $con = mysqli_connect('localhost', 'root', '', 'keepy');
-//$con = mysqli_connect('mysql597int.cp.az.pl', 'u1223200_mil', 'supadup@96', 'db1223200_mil');
+//$con = mysqli_connect('mysql597int.cp.az.pl', 'u1223200_mil', 'supadup@96', 'db1223200_mil'); //password EJ TU CHODZI O TO, ŻE PO DUŃSU SIĘ MUWI SUPER DUPER I TO SIĘ TAK CZYTA, OK!!!!::!:!!::!?!?!?!?!
 // set charset utf8 to mach coallation in db
 $con->set_charset('utf8');
 

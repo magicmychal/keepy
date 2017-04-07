@@ -92,15 +92,13 @@
                             </div><br><br>
                             <a href="posted.php"><input class="ui big yellow button" type="submit" name="submit" value="Post it!"></a>
                         </form>
-                    </div>
+                    </div>    
+                    <?php echo $nameErr;?><br>
+                    <?php echo $emailErr;?><br>
+                    <?php echo $titleErr;?><br>
+                    <?php echo $contentErr;?>
                     </div>
               </div>
-           
-            
-            <?php echo $nameErr;?><br>
-            <?php echo $emailErr;?><br>
-            <?php echo $titleErr;?><br>
-            <?php echo $contentErr;?>
             <script>
                 $('.message .close')
                     .on('click', function() {

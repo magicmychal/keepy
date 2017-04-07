@@ -31,9 +31,14 @@
             $sql = "INSERT INTO notes(title, content, name, mail, color) VALUES (?,?,?,?,?)";
             $stmt = $con->prepare($sql);
             $stmt->bind_param('sssss',$titleForm, $contentForm, $nameForm, $mailForm, $selectedcolor);
-
-            $stmt->execute();
-            $stmt->close();
+        
+            if($canI == 1){
+               
+            }
+            else{
+                $stmt->execute();
+                $stmt->close();
+            }
 
             //mysqli_close($con);
             
