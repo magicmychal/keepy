@@ -6,7 +6,7 @@
 
     //COŚ TU KURCZĘ NIE DZIAŁA :/ 
     //$sql = "SELECT TOP 10 title, content, name, date, color FROM notes order by ID DESC";
-    $sql = "SELECT title, content, name, date, color FROM notes order by ID asc limit 3,12";
+   $sql = "SELECT title, content, name, date, color FROM notes order by ID DESC limit 10";
     
     $result = mysqli_query($con, $sql);
     

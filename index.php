@@ -38,7 +38,7 @@
             <script>
                 $(document).ready(function () {
 
-                    $('.ui.accordion').accordion('refresh');
+                    $('.ui.accordion').accordion('toggle (1)');
                 });
 
             </script>
