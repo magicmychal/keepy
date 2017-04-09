@@ -42,8 +42,9 @@
                     <div class="header">
                     Here for the first time? YOU WILL SEE THIS ONLY ONCE
                     </div>
-                    <p>Keepy is a public space to share your notes! Why? Maybe is you're a Russian agent and you want to send a secret not so secret code you'll find this useful. <br>
-                    Every field is required. Fill them all and smash the button below! <b>Enjoy!</b></p>
+                    <p>Keepy is a public space to share your notes! Why? Maybe  you're a Russian agent and you want to send a secret-not-so secret code for your contact. If yes then you'll find this useful. <br>
+                    Every field is required. Fill them all and smash the button below! <br>
+                    You're email will be used as a verification when deleting a note. Don't worry, we won't send you any spam. You can even use the fake one, just remember what you have typed! <br><b>Enjoy!</b></p>
                 </div>
             <div class="ui floating message display_block">
                     <i class='close icon' data-vivaldi-spatnav-clickable='1'></i>
@@ -66,14 +67,7 @@
                         localStorage.setItem("visited", "yes");
                     }
             </script>
-            <div class="ui accordion">
-                    <div class="title">
-                        <i class="dropdown icon"></i>
-                        Add a note
-                    </div>
-
-                    <div class="content">
-                        <div class="ui six column centered grid">
+                  <div class="ui six column centered grid">
                             <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
                             <div class="ui fluid input">
                                 <input type="text" name="title" id="title" placeholder="Title" value="<?php echo $title;?>">
@@ -93,8 +87,8 @@
                     <?php echo $emailErr;?><br>
                     <?php echo $titleErr;?><br>
                     <?php echo $contentErr;?>
-                    </div>
-              </div>
+                 
+
             <script>
                 $('.message .close')
                     .on('click', function() {

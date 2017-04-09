@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       $nameErr = "<div class='ui negative message'>
                 <i class='close icon' data-vivaldi-spatnav-clickable='1'></i>
                 <div class='error'>Hey! Stop!</div>
-                <p>Only letters and white space allowed</p>
+                <p>Only letters and white space allowed in a<b> name</b> section</p>
                 </div>"; 
         $canI = 1;
     }
