@@ -36,7 +36,14 @@
 
                     $('.ui.accordion').accordion('toggle (1)');
                 });
-
+                function countChar(val) {
+                    var len = val.value.length;
+                    if (len >= 200) {
+                      val.value = val.value.substring(0, 200);
+                    } else {
+                      $('#charNum').text(200 - len);
+                    }
+                  };
             </script>
             <div class="ui floating message display_none">
                     <div class="header">
@@ -72,8 +79,8 @@
                             <div class="ui fluid input">
                                 <input type="text" name="title" id="title" placeholder="Title" value="<?php echo $title;?>">
                             </div>
-                            <textarea class="txt_style" name="content" id="content"  placeholder="Type here" rows="5" cols="40"><?php echo $content;?></textarea>
-                            <br><br>
+                            <textarea class="txt_style" name="content" id="content"  placeholder="Type here" rows="5" cols="40" onkeyup="countChar(this)"><?php echo $content;?></textarea>
+                            <div class="charLeft">Characters left: <p id="charNum">200</p></div>
                             <div class="ui input popup_info">
                                 <input type="text" placeholder="E-mail" name="mail" id="mail" value="<?php echo $email;?>" data-tooltip="Add users to your feed" data-position="top right">
                             </div>
